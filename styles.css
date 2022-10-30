@@ -4,6 +4,7 @@
     --botao-azul: #167bf7;
     --cor-de-fundo: #00030c;
     --font-principal: font-family: 'Inter', sans-serif;
+    --botao-azul-efeito: #3c92fa;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
 }
@@ -25,6 +26,8 @@ body {
     background-image: url("../img/Background.png");
     background-repeat: no-repeat;
     background-size: contain;
+    align-items: center;
+    text-align: center;
 }
 
 .container {
@@ -41,7 +44,7 @@ body {
     color: var(--branco-principal);
     text-decoration: none;
     display: block;
-
+    margin-bottom: 1em;
 }
 
 .bota__secundario {
@@ -60,3 +63,109 @@ body {
     font-size: 28px;
     font-weight: 700;
 }
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa {
+    margin: 0em 6em;
+
+}
+
+.secundario__imagem {
+    width: 65%;
+    transition: 0.5s all
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__paragrafo {
+    color: var(--cinza-secundario);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+
+.dispositivos {
+    margin: 0 0 10rem;
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    margin: 2em 0;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+.rodape {
+    text-align: center;
+    padding: 6em;
+
+}
+
+.rodape__logo {
+    margin: 0 0 3em;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 0 2em;
+}
+
+.lista__texto {
+    text-decoration: none;
+    color: var(--branco-principal);
+}
+
+.lista__texto:hover {
+    color: var(--botao-azul);
+}
+
+.lista__texto:active {
+    color: purple;
+}
+
+.rodape__texto {
+    color: var(--cinza-secundario);
+    margin: 2em;
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
+
+.secundario__imagem:hover {
+    transform: scale(1.1)
+}
+
